@@ -8,5 +8,4 @@ build:
 	docker build -t scaffold-python-flask-api .
 
 run: build
-	docker run -p 5000:5000 scaffold-python-flask-api:latest
-	docker logs --follow scaffold-python-flask-api
+	docker run -it -p 5000:5000 --rm scaffold-python-flask-api:latest
